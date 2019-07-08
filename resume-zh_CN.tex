@@ -18,49 +18,58 @@
 \basicInfo{
   \email{saintshaga@gmail.com} \textperiodcentered\ 
   \phone{(+86) 159-0040-8354}
-%   \textperiodcentered\ 
+  \textperiodcentered\ 
+  \faMapMarker\ {上海}
 %  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}
 }
  
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{南京大学}}{2009 -- 2012}
-\textit{硕士研究生}\ 电子信息科学与工程
-\datedsubsection{\textbf{南京大学}}{2005 -- 2009}
-\textit{学士}\ 电子信息科学与工程\ Top 10\%
+\datedsubsection{\textbf{南京大学}}{2005 -- 2012}
+{\textit{本科}(Top 10\%) \& \textit{硕士研究生}} - {电子信息科学与工程}
+
+\section{\faCogs\ 技术经验简介}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 主要从事基于Java, Spring Boot, Tomcat的分布式开发，有多次Java服务器性能优化的经验
+  \item 对于微服务的开发、测试、部署和监控有一定见解
+  %各个方面都有哪些心得呢？这边得准备下
+  \item 熟悉商用软件(toB)业务的开发和客户技术支持，有带领团队经验，擅长根据业务构建类结构
+  %商用软件的开发跟对私业务有什么区别？在商用软件业务的客户支持有什么特别？
+\end{itemize}
+
 
 \section{\faUsers\ 工作经历}
-\datedsubsection{\textbf{Works Applications} Collabration Common}{2018 年10月 -- 2019年3月}
-\role{项目Manager}{Spring Boot, DynamoDB, AWS Lambda, AWS SQS}
+\datedsubsection{\textbf{Works Applications} Collaboration-Common \& Timeline}{2018 年10月 -- 至今}
+\role{项目Leader}{Tomcat, Spring Boot, AWS DynamoDB, AWS Lambda}
 \begin{onehalfspacing}
+带领小组解决新框架下的难点，并且开发了公共的库:
 \begin{itemize}
-  \item 实现高性能多语言库、基于Spring Security的Auth认证、Tenant库、把原来HUE中的后端渲染引擎移植到Spring Boot中并改进其效率，避免在把项目从旧系统移植到新架构下前端大量的更改
-  \item 制定并且实现项目使用CloudFront+S3(CDN)、AWS Beanstalk(Tomcat)中的自动部署方案，环境从build到部署在半小时内实现无宕机升级
-  \item 对项目主页做并发测试，定位出性能有问题的地方并且进行了优化，经过改进后定位出CPU对并发的影响。单个request的响应时间从约1.5s优化到约400ms，单instance的性能提高到150并发约2s内响应
+  \item 实现高性能多语言库、基于Spring Security的Auth认证、Tenant库、把旧项目中的后端渲染引擎移植到Spring Boot中并改进其效率，避免在把项目从旧系统移植到新架构下前端大量的更改
+  \item 制定并且实现项目使用AWS CloudFront+S3(CDN)、AWS Beanstalk(Tomcat)中的自动部署方案，环境从build到部署在半小时内实现无宕机升级
+  \item 对项目主页做并发测试，定位出性能有问题的地方并且进行了优化，在改进了rest调用、后端渲染引擎效率等问题后，最终定位出CPU对并发的影响(没有改进业务逻辑的情况下)。优化后，单个request的响应时间从约1.5s优化到约400ms，单instance的性能提高到150并发约2s内响应
 \end{itemize}
+%引入tracer机制，使得性能最终更加容易
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{Works Applications} Performance Research}{2018 年7月 -- 2018年9月}
-\role{项目Manager}{Tomcat, Spring, Kubernetes, JMeter, Cassandra}
+\datedsubsection{\textbf{Works Applications} Collaboration-Performance Research}{2018 年7月 -- 2018年9月}
+\role{项目Leader}{Tomcat, Spring, Kubernetes, Cassandra}
 \begin{onehalfspacing}
-\begin{itemize}
-  \item 组建小组解决HUE产品中的性能问题，通过压力测试发现项目中Filter，多语言库，数据库设置，Rest Client等性能问题
-\end{itemize}
+组建小组致力于解决公司框架性能问题，发现项目中Filter，多语言库，数据库，Rest Client等问题
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{Works Applications} HUE Announcement}{2016年5月 -- 2018年6月}
+\datedsubsection{\textbf{Works Applications} Collaboration-Announcement}{2016年5月 -- 2018年6月}
 \role{项目Manager}{Spring, Cassandra, Kafka}
 \begin{onehalfspacing}
 带领小组使用spring, cassandra, kafka开发了Announcement, Notice, Advertisement等公司内部公告的功能
 \begin{itemize}
   \item 根据业务需求做Cassandra的建模，保证数据库高性能访问
-  \item 解决开发中的难题，比如在业务复杂的情况下把数据分发给大量的用户
+  \item 根据业务构建系统类图，使得代码的层次结构更加清晰。解决开发中的难题，比如在业务复杂的情况下把数据分发给大量的用户。
   \item 带领小组成功完成项目并上线，保持组员关系融洽，在任职期间无小组成员离职
 \end{itemize}
 \end{onehalfspacing}
 
 \datedsubsection{\textbf{Works Applications} CIM Connector}{2012年8月 -- 2016年4月}
 \role{软件工程师}{Tomcat, Spring, Hibernate, Axis2}
-%xxx后端开发
 \begin{itemize}
   \item 使用Axis2开发GoogleApps Connector, Office365 Connector, IntraMart Connector, 并且维护和升级已经存在的Connector. 其中Office365 Connector在没有Java API的情况下使用JNI, C++和C\# 调用PowerShell Command完成
   \item batch性能优化:优化batch的执行方式，并且使用JDBC的batch执行，以及GoogleApps API的特点，把batch的执行速度提高了４倍
@@ -76,12 +85,6 @@
 %  \item main contribution
 %\end{itemize}
 
-\section{\faCogs\ 技术栈}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item Java, Spring Boot, Tomcat, 分布式数据库
-  \item 对于微服务的开发有一定见解
-\end{itemize}
 
 %\section{\faHeartO\ 获奖情况}
 %\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}

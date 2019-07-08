@@ -7,45 +7,56 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{Bin Yuan}
+\name{Feng Huang}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{saintshaga@gmail.com} \textperiodcentered\ 
+  \phone{(+86) 159-0040-8354} \textperiodcentered\ 
+  \faMapMarker \ {Shanghai}}
 
 \section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{2013 -- Present}
-\textit{Master student} in Electronics Engineering (EE), expected March 2016
-\datedsubsection{\textbf{Xidian University}, Shaanxi, China}{2009 -- 2013}
-\textit{B.S.} in Electronics Engineering (EE)
+\datedsubsection{\textbf{Nanjing University (NJU)}, Nanjing, China}{2005 -- 2012}
+\textit{Bachelor}(Top 10\%) \& \textit{Master} in Electronics Engineering (EE)
+
+\section{\faCogs\ Self Technical Introduction}
+\begin{itemize}[parsep=0.5ex]
+  \item Mainly engage in development of Java, Spring Boot, Tomcat, Distributed Database. Experienced in performance improving of Java server
+  \item Got some ideas in development, test, deployment and monitor on MSA
+  \item Be familiar with development and support of business software. Experienced as group leader
+\end{itemize}
 
 \section{\faUsers\ Experience}
-\datedsubsection{\textbf{FLAG Inc.} California, America}{2012 -- Present}
-\role{Summer Intern}{Manager: xxx}
-Brief introduction: xxx.
+%\datedsubsection{\textbf{Works Applications} Collaboration-Common \& Timeline}{2018.10 -- Present}
+\datedsubsection{\textbf{Works Applications} Collaboration-Common \& Timeline}{2018.07 -- Present}
+\role{Group Leader}{Tomcat, Spring Boot, AWS DynamoDB, AWS Lambda, AWS SQS}
+Lead group to solve hard problems in new architecture, and develop some common libraries:
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+  \item Implements high performance multi-language library, authentication library based on Spring Security, Multi-Tenant library. Transplant the backend render engine to Spring Boot and improve its efficiency, which avoids lots of modifications in front side when transplanting Timeline project from old system to new architecture
+  \item Make and implement the deployment plan based on AWS CloudFront + S3(CDN) and AWS Beanstalk(Tomcat in EC2). The upgrading of environment takes less than half an hour from build to deploy successfully, without downtime
+  \item Make load test to system to find out the bottleneck. After improving some bottleneck such as Rest Calling, backend rendering, not enough CPU is positioned. After performance improvement(in the condition that business logic is not improved), cost of one request is reduced from about 1.5s to 400ms, while performance of one instance is improved to about 2s response with 150 concurrency.
 \end{itemize}
 
-\datedsubsection{\textbf{xxx Projects}}{Jan. 2015 -- Present}
-\role{C, Python, Django, Linux}{Individual Projects, collaborated with xxx}
-Brief introduction: xxx
+%\datedsubsection{\textbf{Works Applications} Collaboration-Performance Research}{2018.07 -- 2018.09}
+%\role{Group Leader}{Tomcat, Spring, Kubernates, Cassandra}
+%Lead group to research the performance bottleneck of our product(called HUE). After load test, we positioned problems of filter, multi-language library, Rest client, and so on.
+
+\datedsubsection{\textbf{Works Applications} Collaboration-Announcement}{2016.05 -- 2018.06}
+\role{Group Manager}{Spring, Cassandra, Kafka}
+Responsible for the product of distributing important information inside of company, for which Announcement, Notice and Advertisement are designed and developed.
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+  \item Design Cassandra model according to business, which ensure efficient access to database
+  \item Solve critical problems during development, such as distributing messages to large mount of targets in the case that business logic is complicated
+  \item Finish developing all features and release the product in time. During my management period, team keeps good relationship, and no group member resigned
 \end{itemize}
 
-\datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
-\role{\LaTeX, Maintainer}{Individual Projects}
-An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
+\datedsubsection{\textbf{Works Applications} CIM Connector}{2012.08 -- 2016.04}
+\role{Software Engineer}{Spring, Hibernate, Axis2}
+
 \begin{itemize}
-  \item Easy to be further customized or extended
-  \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
-  \item FontAwesome 4.5.0 support
+  \item Develop multiple connectors(GoogleApps, Office 365, and so on) using Axis2, and maintain existed connectors. When developing Office365 connector, there was no Java API at that time. I use JNI, C++ and C\# to call PowerShell Command to implement the connector
+  \item Improve the performance of batch execution. Change the way of executing batch, then make full use of JDBC's batch API and  GoogleApps API to accelerate the speed by 4 times
+  \item Develop Post Check feature to make sure the accuracy of target system
+  \item Establish target system(SAP) from 0 to 1, which helps a lot when maintaining and supporting SAP Connector
 \end{itemize}
 
 % Reference Test
@@ -55,23 +66,6 @@ An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
 %  \item main contribution
 %\end{itemize}
 
-\section{\faCogs\ Skills}
-\begin{itemize}[parsep=0.5ex]
-  \item Programming Languages: C == Python > C++ > Java
-  \item Platform: Linux
-  \item Development: Web, xxx
-\end{itemize}
-
-\section{\faHeartO\ Honors and Awards}
-\datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
-\datedline{Other awards}{2015}
-
-\section{\faInfo\ Miscellaneous}
-\begin{itemize}[parsep=0.5ex]
-  \item Blog: http://your.blog.me
-  \item GitHub: https://github.com/username
-  \item Languages: English - Fluent, Mandarin - Native speaker
-\end{itemize}
 
 %% Reference
 %\newpage
